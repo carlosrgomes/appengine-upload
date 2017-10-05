@@ -13,8 +13,8 @@ import (
 
 //ResponseTemp Temporário
 type ResponseTemp struct {
-	Host string
-	Path string
+	Host string `json:"host"`
+	Path string `json:"path"`
 }
 
 func serveError(ctx context.Context, w http.ResponseWriter, err error) {
